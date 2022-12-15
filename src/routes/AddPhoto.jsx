@@ -11,7 +11,7 @@ const AddPhoto = () => {
   const addPhoto = async(e) => {
     e.preventDefault();
     if(secret === 'password'){
-      const response = await fetch("https://gallery-app-server.vercel.app/photos",{
+      await fetch("https://gallery-app-server.vercel.app/photos",{
       method: "POST",
       headers: {
         "Content-Type": "application/json",
