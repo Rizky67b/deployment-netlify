@@ -13,7 +13,7 @@ const EditPhoto = () => {
   const editPhoto = async(e) => {
     e.preventDefault();
     try{
-      await fetch("http://localhost:3001/photos/"+id,{
+      await fetch("https://gallery-app-server.vercel.app/photos"+id,{
         method: "PATCH",
         headers: {
           'Content-Type': "application/json",
