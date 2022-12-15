@@ -14,7 +14,7 @@ const Photos = () => {
     // TODO: answer here
 
     try{
-      await fetch("http://localhost:3001/photos/"+id,{
+      await fetch("https://gallery-app-server.vercel.app/photos/"+id,{
         method: "DELETE",
       });
       setPhotos(photos.filter((e)=> e.id !== id))
